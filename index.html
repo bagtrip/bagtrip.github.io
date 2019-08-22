@@ -1,1 +1,60 @@
-hi, bag.
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+	<title>包裹去哪了 | baggage world service</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link rel="shortcut icon" href="#" />
+	<link href="dist/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body style="height:100%;margin:0;">
+    <div class="wrapper">
+		<p id="aName" class="hide">兰州</p>
+		
+		<div class="searchBox">
+			<form action="">
+				<input type="text" class="searchIpt f14" name="wd" maxlength="100" autocomplete="off"/>
+				<input type="submit" class="btn cp" value="ENQUIRY"/>
+			</form>
+		</div>
+		
+		<div class="map" id="map_container"></div>
+		<div class="line-info">
+			<p><em style="background: #f6f17b;"></em><span>departure</span></p>
+			<p><em style="background: rgb(80, 160, 235);"></em><span>arrival</span></p>
+		</div>
+		<div  id="topClock"></div>
+	</div>
+
+	<footer>
+		<p>&copy;2012-2019 ANONYMOUS</p>
+	</footer>
+<script src="dist/js/jquery-3.3.1.min.js"></script>
+<script src="dist/js/echarts.min.js"></script>
+ 
+<script src="dist/js/bmap.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7iSvKnjMoGScneoQsT2CH3clrZMsTRMN"></script>
+
+<script src="dist/js/myDigitclock.js"></script>
+<script src="dist/js/show_airport.js"></script>
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/jquery.autocomplete.min.js"></script>
+
+<script>
+	$('.searchIpt').AutoComplete({
+		'data': ['About Me', '123oops', 'abcdefg', 'One', 'Two', 'Three', 'Four', 'Five', 'Six','smwell.com', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve'],
+		'itemHeight': 24,
+		'width': 529
+	}).AutoComplete('show');
+		
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+</body>
+</html>
+
